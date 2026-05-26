@@ -442,7 +442,7 @@ void loop() {
 	switch (state) {
 
 		// Wait for the scan to find a device, then connect to it and set up
-    // the GATT service and characteristic
+		// the GATT service and characteristic
 		case State::SCANNING_AND_CONNECTING:
 			{
 				if (!NimBLEDevice::getScan()->isScanning()) {
@@ -512,6 +512,6 @@ void loop() {
 			}
 	}
 
-	// Delay to keep CPU usage low while waiting for BLE events
+	// Delay to keep CPU usage low
 	delay(20);
 }
